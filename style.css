@@ -1,0 +1,48 @@
+
+.parent {
+    background-color:rgb(121, 168, 212);
+    height: 400px;
+    width: 50%;
+  }
+  
+  .child{
+    background-color: #DE354C ;
+    height:50%;
+    width: 50%;
+    animation: left-to-right 1s ease-in forwards infinite alternate; 
+  
+  }
+  
+  .parent:hover .child {
+    animation-play-state: paused;
+    animation: left-to-right 1s ease-in forwards 3 alternate; 
+    transform: translateY(100%);
+  
+  }
+  
+  @keyframes left-to-right {
+    0% {
+      transform: translateX(0);
+      background-color #DE354C;
+    } 
+    33% {
+    transform: translateY(100%);
+    background-color #932432;
+    }
+    55%{
+      background-color #3C1874
+    }
+   66% {
+     transform: translateX(100%) translateY(100%);
+     background-color #283747
+    }
+    80%
+    {
+      background: color #e8cebf;
+    }
+    100%{
+      transform: translateX(100%);
+      background-color: #E8CEBF;
+      }
+    }
+   
